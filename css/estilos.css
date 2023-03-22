@@ -1,0 +1,216 @@
+
+/* estilos generales */
+
+ *{
+    margin: 0;
+    padding: 0; 
+    list-style: none;
+    text-decoration: none;
+}
+
+  
+/* Estilos color de fondp */
+
+body{
+    
+    background-color: #161b25  
+    
+    
+}
+
+/* Barra de navegacion */
+
+
+.navbar{
+
+    padding: 1rem;
+    background-color: #71d011;
+}
+
+.navbar-collapse{
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+p{
+    margin: 20px;
+    color: blanchedalmond;
+}
+
+
+
+
+
+
+
+
+.ancla-arriba{
+   padding: 10px;
+   font-size: 25px;
+   display: flex;
+   justify-content: end;
+
+   
+}   
+
+/* estilos de logros */
+
+.headerunico{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #71d011;
+}
+
+
+.ulunico .liunico{
+
+display: inline-block;
+padding: 30px;
+
+}
+
+
+.h1lo{
+    
+   padding: 30px;
+   color: #ddddf6;
+    
+}
+
+.h3ti{
+    padding: 50px;
+    color: #7111d0;
+
+}
+
+ol{padding: 50px;
+   color: #467edd;
+}
+
+.imgc1{width: 150px;}
+
+.imgc2{width: 300px;}
+
+.marg1{
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.cobo{background-color: #232b3d;
+      border-radius: 50px;
+} 
+
+/* estilos de galeria */
+ 
+ .h1ga{
+    
+    padding: 30px;
+    color: #dfead5;
+
+
+}
+
+.fose{
+    width: 300px;
+    
+} 
+
+/* estilos de campeones */
+
+
+.dicam{
+    padding: 20px;
+    color: #ddddf6;
+}
+
+.diarq{
+    margin: 20px;
+    background-color: #467edd;
+    width: 20%;
+} 
+
+
+/* estilos contacto */
+
+
+   .parcon{
+
+    font-size: 25px;
+   }
+ 
+
+
+
+/* estilos de galeria grid */
+
+.galeria{
+
+display: grid;
+grid-template-columns:repeat(3,1fr) ;
+grid-template-rows: repeat(5,1fr);
+padding: 10px;
+gap: 10px;
+
+
+}
+
+.items:nth-child(1){
+
+
+     grid-area: span 2 / span 2; 
+
+    }
+
+.items:nth-child(9){
+
+    grid-row-start: span 2;
+
+}
+
+.items:nth-child(12){
+
+   grid-area: span 2 / span 3;
+
+}
+
+
+
+.imga{
+
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius:10px ;
+}  
+
+/* campeones estilos grid */
+
+.arqueros{
+
+    display: grid;
+    grid-template-columns: repeat(3.1fr);
+}
+
+.imgarqueros{
+
+    width: 100%;
+} 
+
+
+
+/* footer */
+
+.footer-contacto{
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
