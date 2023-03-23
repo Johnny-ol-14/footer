@@ -191,17 +191,30 @@ border-radius:10px ;
 
 /* campeones estilos grid */
 
-.arqueros{
+.campeones-grid{
 
     display: grid;
-    grid-template-columns: repeat(3.1fr);
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-auto-rows:250px ;
+    gap: 30px;
+    margin: 20px;
+    
 }
 
-.imgarqueros{
+.img-campeones{
 
     width: 100%;
-} 
+    height: 100%;
+    object-fit:cover ;
+    
+    
+}
 
+.items-campeones:nth-child(2){
+
+    grid-column-start: span 2;
+}
 
 
 /* footer */
