@@ -3,19 +3,19 @@
 
  *{
     margin: 0;
-    padding: 0; 
+    padding: 0;
     list-style: none;
     text-decoration: none;
 }
 
-  
+
 /* Estilos color de fondp */
 
 body{
-    
-    background-color: #161b25  
-    
-    
+
+    background-color: #161b25
+
+
 }
 
 /* Barra de navegacion */
@@ -53,8 +53,8 @@ p{
    display: flex;
    justify-content: end;
 
-   
-}   
+
+}
 
 /* estilos de logros */
 
@@ -77,10 +77,10 @@ padding: 30px;
 
 
 .h1lo{
-    
+
    padding: 30px;
    color: #ddddf6;
-    
+
 }
 
 .h3ti{
@@ -104,12 +104,12 @@ ol{padding: 50px;
 
 .cobo{background-color: #232b3d;
       border-radius: 50px;
-} 
+}
 
 /* estilos de galeria */
- 
+
  .h1ga{
-    
+
     padding: 30px;
     color: #dfead5;
 
@@ -118,22 +118,9 @@ ol{padding: 50px;
 
 .fose{
     width: 300px;
-    
-} 
 
-/* estilos de campeones */
-
-
-.dicam{
-    padding: 20px;
-    color: #ddddf6;
 }
 
-.diarq{
-    margin: 20px;
-    background-color: #467edd;
-    width: 20%;
-} 
 
 
 /* estilos contacto */
@@ -143,7 +130,7 @@ ol{padding: 50px;
 
     font-size: 25px;
    }
- 
+
 
 
 
@@ -163,7 +150,7 @@ gap: 10px;
 .items:nth-child(1){
 
 
-     grid-area: span 2 / span 2; 
+     grid-area: span 2 / span 2;
 
     }
 
@@ -187,34 +174,87 @@ width: 100%;
 height: 100%;
 object-fit: cover;
 border-radius:10px ;
-}  
+}
 
 /* campeones estilos grid */
 
 .campeones-grid{
 
     display: grid;
-    grid-template-columns:repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);
-    grid-auto-rows:250px ;
-    gap: 30px;
-    margin: 20px;
-    
+    grid-template-columns:(1,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-auto-rows:250px ; 
+    gap: 10px;
+    padding: 10px;
+
 }
+
+
+
+.items-campeones{
+    position: relative;
+
+    }
+
 
 .img-campeones{
 
     width: 100%;
     height: 100%;
     object-fit:cover ;
-    
+    border-radius:10px ;
+
+
+}
+
+
+.text-campeones{
+
+    position:absolute ;
+    bottom:0 ;
+    color: white;
+    background: linear-gradient(rgba(255,255,255,0.5),rgba(0,0,0,1));
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    font-size:medium;
+}
+
+
+.h4-campeones{
+
+    color: #7111d0;
+    margin: 10px;
     
 }
 
+.arqueros{
+
+    font-size: 30px;
+}
+
+/*
 .items-campeones:nth-child(2){
 
     grid-column-start: span 2;
+
+} */
+
+.campeones-defensores{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+    grid-template-rows:repeat(5,3fr) ;
+    gap: 10px;
+    padding: 10px;
+
 }
+
+.campeones-defensores .items-campeones:nth-child(9){
+
+    grid-column-start: span 2;
+}
+
 
 
 /* footer */
@@ -227,3 +267,14 @@ border-radius:10px ;
 }
 
 
+/* midia querys de campeones */
+
+@media screen(min-width:768px) {
+
+    .campeones-grid{
+
+        grid-template-columns:repeat(2,1fr);
+        grid-template-row: 1px;
+    }
+
+}
