@@ -15,6 +15,7 @@
 body{
     
     background-color: #161b25
+    
 
 
 }
@@ -54,10 +55,13 @@ p{
 /* estilos de logros */
 
 .card{
-    margin-bottom: 10px;
-    margin: 10px;
-    margin-top: 100px; */
+    margin-bottom: 10px; 
+    margin: 10px; 
+    margin-top: 30px; 
     gap: 10px;
+    box-shadow:15px 15px 10px 5px #010101;
+    background-color:;
+    gra
 }
 
 
@@ -69,17 +73,7 @@ p{
     object-fit: cover;
 }
 
-.footer-logros{
-
-   position: absolute;
-   bottom: 0;
-   width: 100%;
-
-}
-
-    
-    
-}
+   
 
 
 /* estilos de galeria */
@@ -105,6 +99,12 @@ p{
    .parcon{
 
     font-size: 25px;
+   }
+
+   .footer-contacto{
+
+    position: absolute;
+    bottom: 0;
    }
 
 
