@@ -1,382 +1,214 @@
-
 /* estilos generales */
-
- *{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
-
 /* Estilos color de fondo */
-
-
-body{
-    
-    background-color: #161b25 
-
-
-
+body {
+  position: relative;
+  padding-bottom: 7em;
+  min-height: 100vh;
+  background-color: #161b25;
 }
 
 /* Barra de navegacion */
-
-
-.navbar{
-
-    padding: 1rem;
-    background-color: #71d011;
+.navbar {
+  padding: 1rem;
+  background-color: #71d011;
+}
+.navbar .navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
 }
 
-.navbar-collapse{
-
-    align-items: center;
-    justify-content: space-between;
+.h1-index {
+  color: #7111d0;
+  font-size: 45px;
+  font-family: "Faster One", cursive;
+  margin-bottom: 30px;
 }
 
-
-
-p{
-    margin: 20px;
-    color: rgb(255, 235, 205);
-}
-
-
-.ancla-arriba{
-   padding: 10px;
-   font-size: 25px;
-   display: flex;
-   justify-content: end;
-
-
+p {
+  margin: 20px;
+  color: rgb(255, 235, 205);
 }
 
 /* estilos de logros */
-
-
-.div-h1-logros{
-
-    display: flex;
-    justify-content: center;
+.div-h1-logros {
+  display: flex;
+  justify-content: center;
+}
+.div-h1-logros .h1-logros {
+  color: #7111d0;
+  margin-top: 5px;
+  font-family: "Faster One", cursive;
+  font-size: 45px;
 }
 
-.h1-logros{
-
-    color: #7111d0;
-    margin-top: 20px;
-    font-family: 'Faster One', cursive;
-    font-size: 60px;
+.card-group {
+  margin-bottom: 50px;
 }
-
-.card-group{
-
-    margin-bottom: 50px;
+.card-group .card {
+  margin-bottom: 10px;
+  margin: 10px;
+  margin-top: 30px;
+  gap: 10px;
+  box-shadow: 15px 15px 10px 5px #010101;
+  background-color: #1154d0;
 }
-
-.card{
-    margin-bottom: 10px; 
-    margin: 10px; 
-    margin-top: 30px; 
-    gap: 10px;
-    box-shadow:15px 15px 10px 5px #010101;
-    background-color: #1154d0;
-  
-    
+.card-group .card .img-logros {
+  width: 442px;
+  height: 260px;
+  object-fit: cover;
 }
-
-
-
-.img-logros{
-
-    width: 436px;
-    height:260px ;
-    object-fit: cover;
-}
-
-   
-
 
 /* estilos de galeria */
-
- .h1ga{
-
-    padding: 30px;
-    color: #dfead5;
-
-
+.div-h1-galeria {
+  display: flex;
+  justify-content: center;
+}
+.div-h1-galeria .h1-galeria {
+  color: #7111d0;
+  font-size: 45px;
+  font-family: "Faster One", cursive;
+  margin-top: 5px;
+  margin-bottom: 30px;
 }
 
-.fose{
-    width: 300px;
-
+.fose {
+  width: 300px;
 }
-
-
-
-/* estilos contacto */
-
-   .parcon{
-
-    font-size: 25px;
-
-   }
-
-
-
-
-
 
 /* estilos de galeria grid */
-
 .galeria {
-
-display: grid;
-grid-template-columns:repeat(3,1fr);
-grid-template-rows: repeat(5,1fr);
-padding: 10px;
-gap: 10px;
-
-
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  padding: 10px;
+  gap: 10px;
 }
 
-.items:nth-child(1){
-
-
-     grid-area: span 2 / span 2;
-
-    }
-
-.items:nth-child(9){
-
-    grid-row-start: span 2;
-
+.items:nth-child(1) {
+  grid-area: span 2/span 2;
 }
 
-.items:nth-child(12){
-
-   grid-area: span 2 / span 3;
-
+.items:nth-child(9) {
+  grid-row-start: span 2;
 }
 
+.items:nth-child(12) {
+  grid-area: span 2/span 3;
+}
 
-
-.imga{
-
-width: 100%;
-height: 100%;
-object-fit: cover;
-border-radius:10px ;
+.imga {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 /* campeones estilos grid */
-
-.campeones-grid{
-
-    display: grid;
-    grid-template-columns:(1,1fr);
-    grid-template-rows: repeat(3,1fr);
-    grid-auto-rows:250px ; 
-    gap: 10px;
-    padding: 10px;
-   
-
+.h1-campeones {
+  color: #7111d0;
+  font-size: 45px;
+  font-family: "Faster One", cursive;
 }
 
-
-
-.items-campeones{
-    position: relative;
-
-    }
-
-
-.img-campeones{
-
-    width: 100%;
-    height: 100%;
-    object-fit:cover ;
-    border-radius:10px ;
-
-
+.campeones-grid {
+  display: grid;
+  grid-template-columns: 1, 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  gap: 10px;
+  padding: 10px;
 }
 
-
-.text-campeones{
-
-    position:absolute ;
-    bottom:0 ;
-    color: white;
-    background: linear-gradient(rgba(255,255,255,0.5),rgba(0,0,0,1));
-    width: 100%;
-    margin: 0;
-    font-size:medium;
-    border-radius: 5px;
-    padding: 10px;
+.items-campeones {
+  position: relative;
+}
+.items-campeones .img-campeones {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.items-campeones .text-campeones {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgb(0, 0, 0));
+  width: 100%;
+  margin: 0;
+  font-size: medium;
+  border-radius: 5px;
+  padding: 10px;
 }
 
-h1{
-
-   
+.h2-campeones {
+  color: #1154d0;
+  margin: 10px;
 }
 
-.h2-campeones{
-
-    color: #7111d0;
-    margin: 10px;
-    
+.campeones-defensores {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 3fr);
+  gap: 10px;
+  padding: 10px;
+}
+.campeones-defensores .items-campeones:nth-child(9) {
+  grid-column-start: span 2;
 }
 
-
-
-
-.campeones-defensores{
-
-    display: grid;
-    grid-template-columns: repeat(2,1fr) ;
-    grid-template-rows:repeat(5,3fr) ;
-    gap: 10px;
-    padding: 10px;
-
+.campeones-mediocampistas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
 }
 
-.campeones-defensores .items-campeones:nth-child(9){
-
-    grid-column-start: span 2;
+.campeones-delanteros {
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+.campeones-delanteros .items-campeones:nth-child(1) {
+  grid-area: span 2;
+}
+.campeones-delanteros .items-campeones:nth-child(6) {
+  grid-area: span 2/span 2;
+  border: 2px solid #eaee06;
+  border-radius: 5px;
 }
 
-.campeones-mediocampistas{
-
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows:repeat(4,1fr) ;
-    gap: 10px;
-    padding: 10px;
+.imgdt-campeones {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.campeones-delanteros{
-
-    display: grid;
-    grid-template-columns: repeat(2,3fr) ;
-    grid-template-rows:repeat(3,1fr) ;
-    gap: 10px; 
-    padding: 10px;
+/* estilos contacto */
+.h1-contacto {
+  color: #7111d0;
+  font-size: 45px;
+  font-family: "Faster One", cursive;
 }
 
-.campeones-delanteros .items-campeones:nth-child(1){
-
-
-    grid-area: span 2 ;
+.parcon {
+  font-size: 25px;
 }
 
-.campeones-delanteros .items-campeones:nth-child(6){
-
-    grid-area:span 2 / span 2 ;
-    border: 2px solid #eaee06; 
-    border-radius: 5px;
+/* footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
-.dt-campeones{
-
-    padding-bottom: 2px;
-    
-}
-
-.imgdt-campeones{
-
-    width: 100%;
-    height: 100%;
-    object-fit:cover ;
-}
-
-
-/* media queries de campeones */
-
-@media screen and (min-width:1024px) {
-
-    .h4-campeones{
-
-        color: #7111d0;
-        margin: 5px;
-        
-    }
-
-    .campeones-grid{
-
-        display: grid;
-        grid-template-columns: repeat(3,2fr);
-        grid-template-rows: none;
-        gap: 10px;
-        padding: 10px;
-
-       }
-
-   
-    .campeones-defensores{
-
-        grid-template-columns:repeat(3,2fr) ;
-        grid-template-rows:repeat(3,1fr) ;
-
-    }
-
-    .campeones-defensores .items-campeones:nth-child(9){
-
-        grid-column-start: span 1;
-}
-
-.campeones-mediocampistas{
-
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows:repeat(3,1fr) ;
-    gap: 10px;
-    padding: 10px;
-}
-
-.campeones-mediocampistas .items-campeones:nth-child(6){
-
-
-    grid-area: span 2;
-}
-
-.campeones-delanteros{
-
-
-    display: grid;
-    grid-template-columns: repeat(3,1fr) ;
-    grid-template-rows:repeat(2,1fr) ;
-    gap: 10px; 
-    padding: 10px;
-
-
-}
-
-
-.campeones-delanteros .items-campeones:nth-child(1){
-
-    grid-area: span 1 ;
-}
-
-.campeones-delanteros .items-campeones:nth-child(6){
-
-    grid-area:span 1 ;
-    border: 2px solid #eaee06; 
-    border-radius: 5px;
-}
-
- }
-
-
- /* media queries de logros */
-
- 
-
-@media screen and (min-width:768px) {
-
-
-    .p-logros{
-    
-        font-size: 30px;
-    }
-    
-     }
+/*# sourceMappingURL=estilos.css.map */
