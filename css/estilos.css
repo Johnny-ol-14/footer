@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
 /* variables */
 /* estilos generales */
 * {
@@ -262,6 +269,69 @@ footer {
   .p-logros {
     font-size: 30px;
   }
+}
+.titulo-1 {
+  font-size: 1rem;
+}
+
+.titulo-2 {
+  font-size: 2rem;
+}
+
+.titulo-3 {
+  font-size: 3rem;
+}
+
+.titulo-4 {
+  font-size: 4rem;
+}
+
+.titulo-5 {
+  font-size: 5rem;
+}
+
+.titulo-6 {
+  font-size: 6rem;
+}
+
+.blue {
+  color: blue;
+}
+
+.red {
+  color: red;
+}
+
+.black {
+  color: black;
+}
+
+.white {
+  color: white;
+}
+
+.gray {
+  color: gray;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.green {
+  color: green;
+}
+
+.pink {
+  color: pink;
+}
+
+.orange {
+  color: orange;
+}
+
+.blueviolet {
+  color: blueviolet;
 }
 
 /*# sourceMappingURL=estilos.css.map */

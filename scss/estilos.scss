@@ -2,6 +2,8 @@
 @import "../partials/fonts";
 @import "../partials/reset";
 @import "../partials/variables";
+@import "../partials/conditional";
+
 
 
 /* variables */
@@ -311,5 +313,11 @@ footer{
     width: 100%;
 }
 
-@import "queries"
+@import "../scss/queries";
+
+@import "../partials/bucles";
+
+
+
+
 

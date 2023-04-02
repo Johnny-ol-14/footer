@@ -1,0 +1,17 @@
+//for
+
+@for $i from 1 to 7{
+     .titulo-#{$i}{
+
+        font-size: 1rem * $i;
+     }
+
+}
+
+//each
+
+@each $colorr in blue, red, black, white, gray, yellow, green, pink, orange, blueviolet,{
+                     .#{$colorr}{
+                        color: $colorr;
+                     }
+}
