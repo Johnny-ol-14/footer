@@ -311,6 +311,10 @@ footer{
     position: absolute;
     bottom: 0;
     width: 100%;
+    background: rgb(29,85,236);
+    background: linear-gradient(159deg, rgba(29,85,236,1) 0%, rgba(246,245,242,1) 44%);
+   
+
 }
 
 @import "../scss/queries";

@@ -216,6 +216,8 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+  background: rgb(29, 85, 236);
+  background: linear-gradient(159deg, rgb(29, 85, 236) 0%, rgb(246, 245, 242) 44%);
 }
 
 /* media queries de campeones */
