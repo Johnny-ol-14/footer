@@ -308,19 +308,62 @@ p{
 
 footer{
 
+    height: 100px;
     position: absolute;
     bottom: 0;
     width: 100%;
     background: rgb(29,85,236);
     background: linear-gradient(159deg, rgba(29,85,236,1) 0%, rgba(246,245,242,1) 44%);
    
+    .a-footer{
+       
+        height: 30px;
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2px;
+        margin: 10px;
+        border: 2px solid black;
+        border-radius: 50%;
+        transition: all 0.2s ease-in;
+        text-decoration: none;
+        
 
+    }
+
+    .iconos{
+
+        color: black;
+        font-size: 1.4rem;
+        transition: all 0.2s ease-in;
+    }
+ 
+    .iconos-footer a:hover{
+
+        background-color: black;
+        border: 2px solid #1154d0;
+
+    }
+
+    .iconos-footer i:hover{
+
+        color: white;
+    }
+
+    .p-footer{
+
+        font-size: 12px;
+        color: #aeaeae;
+        position: relative;
+        bottom: 20px;
+
+    }
 }
 
 @import "../scss/queries";
 
 @import "../partials/bucles";
-
 
 
 
