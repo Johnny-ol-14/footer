@@ -59,6 +59,32 @@ p{
     color: rgb(255, 235, 205);
 }
 
+.div-boton{
+
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin-right: 10px;
+
+}
+
+
+
+.icono-arriba{
+
+     font-size: 2.5rem;
+     color: #71d011;
+     transition: all 0.3s ease-in;
+    
+}
+
+.icono-arriba:hover{
+
+    color: #f6f3f3;
+}
+
+
+
 /* estilos de logros */
 
 .div-h1-logros{
