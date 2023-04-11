@@ -20,6 +20,7 @@ $bgprincipal:#161b25;
 }
 
    body{  
+   
     position: relative;
     padding-bottom:7em;
     min-height: 100vh;
@@ -29,10 +30,12 @@ $bgprincipal:#161b25;
 
   /* Barra de navegacion */  
 
+
   .navbar{
 
     padding: 1rem;
-    background-color: #71d011;
+    background-color:#71d011;
+
     
 
     
@@ -221,6 +224,7 @@ p{
 
     position: relative;
 
+
     .img-campeones{
 
         width: 100%;
@@ -242,6 +246,7 @@ p{
         font-size:medium;
         border-radius: 5px;
         padding: 10px;
+       
     }
 
     }
@@ -363,10 +368,10 @@ p{
 
 }
 
-@keyframes glowing {
+ @keyframes glowing {
 
     0% {
-        background-position: 0 0;
+         background-position: 0 0;
     }
 
     50%{
@@ -376,8 +381,8 @@ p{
     100%{
 
         background-position:0 0 ;
-    }
-}
+     }
+ }
 
 
 /* footer */
@@ -437,10 +442,7 @@ footer{
     }
 }
 
-@import "../scss/queries";
+@import "./queries";
 
 @import "../partials/bucles";
-
-
-
 

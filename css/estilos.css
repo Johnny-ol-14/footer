@@ -1,18 +1,429 @@
-/* Error: expected media condition in parentheses.
- *    ,
- * 95 |      @media screen and {
- *    |                        ^
- *    '
- *   scss\_queries.scss 95:24  @import
- *   scss\estilos.scss 440:9   root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: expected media condition in parentheses.\a    \2577 \a 95 \2502       @media screen and {\d\a    \2502                         ^\a    \2575 \a   scss\\_queries.scss 95:24  @import\a   scss\\estilos.scss 440:9   root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
+
+/* variables */
+/* estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  position: relative;
+  padding-bottom: 7em;
+  min-height: 100vh;
+  background-color: #161b25;
+}
+
+/* Barra de navegacion */
+.navbar {
+  padding: 1rem;
+  background-color: #71d011;
+}
+.navbar .navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.h1-index {
+  color: #7111d0;
+  font-size: 45px;
+  font-family: "Faster One", cursive;
+  margin-bottom: 30px;
+}
+
+p {
+  margin: 20px;
+  color: rgb(255, 235, 205);
+}
+
+.div-boton {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  margin-right: 10px;
+}
+
+.icono-arriba {
+  font-size: 2.5rem;
+  color: #71d011;
+  transition: all 0.3s ease-in;
+}
+
+.icono-arriba:hover {
+  color: #f6f3f3;
+}
+
+/* estilos de logros */
+.div-h1-logros {
+  display: flex;
+  justify-content: center;
+}
+.div-h1-logros .h1-logros {
+  color: #7111d0;
+  margin-top: 5px;
+  font-family: "Faster One", cursive;
+  font-size: 45px;
+}
+
+.card-group {
+  margin-bottom: 50px;
+}
+.card-group .card {
+  margin-bottom: 10px;
+  margin: 10px;
+  margin-top: 30px;
+  gap: 10px;
+  box-shadow: 15px 15px 10px 5px #010101;
+  background-color: #1154d0;
+}
+.card-group .card .img-logros {
+  width: 442px;
+  height: 260px;
+  object-fit: cover;
+}
+
+/* estilos de galeria */
+.div-h1-galeria {
+  display: flex;
+  justify-content: center;
+}
+.div-h1-galeria .h1-galeria {
+  color: #7111d0;
+  font-size: 45px;
+  font-family: "Faster One", cursive;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.fose {
+  width: 300px;
+}
+
+/* estilos de galeria grid */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  padding: 10px;
+  gap: 10px;
+}
+
+.items:nth-child(1) {
+  grid-area: span 2/span 2;
+}
+
+.items:nth-child(9) {
+  grid-row-start: span 2;
+}
+
+.items:nth-child(12) {
+  grid-area: span 2/span 3;
+}
+
+.imga {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* campeones estilos grid */
+.h1-campeones {
+  color: #7111d0;
+  font-size: 45px;
+  font-family: "Faster One", cursive;
+}
+
+.campeones-grid {
+  display: grid;
+  grid-template-columns: 1, 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  gap: 10px;
+  padding: 10px;
+}
+
+.items-campeones {
+  position: relative;
+}
+.items-campeones .img-campeones {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.items-campeones .text-campeones {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgb(0, 0, 0));
+  width: 100%;
+  margin: 0;
+  font-size: medium;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.h2-campeones {
+  color: #1154d0;
+  margin: 10px;
+}
+
+.campeones-defensores {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 3fr);
+  gap: 10px;
+  padding: 10px;
+}
+.campeones-defensores .items-campeones:nth-child(9) {
+  grid-column-start: span 2;
+}
+
+.campeones-mediocampistas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.campeones-delanteros {
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+.campeones-delanteros .items-campeones:nth-child(1) {
+  grid-area: span 2;
+}
+.campeones-delanteros .items-campeones:nth-child(6) {
+  grid-area: span 2/span 2;
+  border: 2px solid #eaee06;
+  border-radius: 5px;
+}
+
+.imgdt-campeones {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* estilos contacto */
+.h1-contacto {
+  color: #7111d0;
+  font-size: 45px;
+  font-family: "Faster One", cursive;
+}
+
+.parcon {
+  font-size: 25px;
+}
+
+.boton-enviar {
+  background-color: black;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  border-radius: 12px;
+  margin-left: 10px;
+  margin-bottom: 60px;
+  width: 20%;
+}
+
+.boton-enviar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
+  background-size: 800%;
+  border-radius: 10px;
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+/* footer */
+footer {
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgb(29, 85, 236);
+  background: linear-gradient(159deg, rgb(29, 85, 236) 0%, rgb(246, 245, 242) 44%);
+}
+footer .a-footer {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+  text-decoration: none;
+}
+footer .iconos {
+  color: black;
+  font-size: 1.4rem;
+  transition: all 0.2s ease-in;
+}
+footer .iconos-footer a:hover {
+  background-color: black;
+  border: 2px solid #1154d0;
+}
+footer .iconos-footer i:hover {
+  color: white;
+}
+footer .p-footer {
+  font-size: 12px;
+  color: #aeaeae;
+  position: relative;
+  bottom: 20px;
+}
+
+/* media queries de campeones */
+@media screen and (min-width: 1024px) {
+  .h4-campeones {
+    color: #7111d0;
+    margin: 5px;
+  }
+  .campeones-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: none;
+    gap: 10px;
+    padding: 10px;
+  }
+  .campeones-defensores {
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .campeones-defensores .items-campeones:nth-child(9) {
+    grid-column-start: span 1;
+  }
+  .campeones-mediocampistas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+  }
+  .campeones-mediocampistas .items-campeones:nth-child(6) {
+    grid-area: span 2;
+  }
+  .campeones-delanteros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+  }
+  .campeones-delanteros .items-campeones:nth-child(1) {
+    grid-area: span 1;
+  }
+  .campeones-delanteros .items-campeones:nth-child(6) {
+    grid-area: span 1;
+    border: 2px solid #eaee06;
+    border-radius: 5px;
+  }
+}
+/* media queries de logros */
+@media screen and (min-width: 768px) {
+  .p-logros {
+    font-size: 30px;
+  }
+}
+.titulo-1 {
+  font-size: 1rem;
+}
+
+.titulo-2 {
+  font-size: 2rem;
+}
+
+.titulo-3 {
+  font-size: 3rem;
+}
+
+.titulo-4 {
+  font-size: 4rem;
+}
+
+.titulo-5 {
+  font-size: 5rem;
+}
+
+.titulo-6 {
+  font-size: 6rem;
+}
+
+.blue {
+  color: blue;
+}
+
+.red {
+  color: red;
+}
+
+.black {
+  color: black;
+}
+
+.white {
+  color: white;
+}
+
+.gray {
+  color: gray;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.green {
+  color: green;
+}
+
+.pink {
+  color: pink;
+}
+
+.orange {
+  color: orange;
+}
+
+.blueviolet {
+  color: blueviolet;
+}
+
+/*# sourceMappingURL=estilos.css.map */
