@@ -153,13 +153,15 @@ p {
 .items-campeones {
   position: relative;
 }
-.items-campeones .img-campeones {
+
+.img-campeones {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
-.items-campeones .text-campeones {
+
+.text-campeones {
   position: absolute;
   bottom: 0;
   color: white;
@@ -238,9 +240,9 @@ p {
   font-weight: bold;
   position: relative;
   border-radius: 12px;
-  margin-left: 10px;
+  margin-left: 116px;
   margin-bottom: 60px;
-  width: 20%;
+  width: 70px;
 }
 
 .boton-enviar::before {
@@ -310,58 +312,6 @@ footer .p-footer {
   bottom: 20px;
 }
 
-/* media queries de campeones */
-@media screen and (min-width: 1024px) {
-  .h4-campeones {
-    color: #7111d0;
-    margin: 5px;
-  }
-  .campeones-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 2fr);
-    grid-template-rows: none;
-    gap: 10px;
-    padding: 10px;
-  }
-  .campeones-defensores {
-    grid-template-columns: repeat(3, 2fr);
-    grid-template-rows: repeat(3, 1fr);
-  }
-  .campeones-defensores .items-campeones:nth-child(9) {
-    grid-column-start: span 1;
-  }
-  .campeones-mediocampistas {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
-    padding: 10px;
-  }
-  .campeones-mediocampistas .items-campeones:nth-child(6) {
-    grid-area: span 2;
-  }
-  .campeones-delanteros {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
-    padding: 10px;
-  }
-  .campeones-delanteros .items-campeones:nth-child(1) {
-    grid-area: span 1;
-  }
-  .campeones-delanteros .items-campeones:nth-child(6) {
-    grid-area: span 1;
-    border: 2px solid #eaee06;
-    border-radius: 5px;
-  }
-}
-/* media queries de logros */
-@media screen and (min-width: 768px) {
-  .p-logros {
-    font-size: 30px;
-  }
-}
 .titulo-1 {
   font-size: 1rem;
 }
@@ -424,6 +374,101 @@ footer .p-footer {
 
 .blueviolet {
   color: blueviolet;
+}
+
+/* media queries de campeones */
+@media screen and (min-width: 1024px) {
+  .h4-campeones {
+    color: #7111d0;
+    margin: 5px;
+  }
+  .campeones-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: none;
+    gap: 10px;
+    padding: 10px;
+  }
+  .campeones-defensores {
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .campeones-defensores .items-campeones:nth-child(9) {
+    grid-column-start: span 1;
+  }
+  .campeones-mediocampistas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+  }
+  .campeones-mediocampistas .items-campeones:nth-child(6) {
+    grid-area: span 2;
+  }
+  .campeones-delanteros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+  }
+  .campeones-delanteros .items-campeones:nth-child(1) {
+    grid-area: span 1;
+  }
+  .campeones-delanteros .items-campeones:nth-child(6) {
+    grid-area: span 1;
+    border: 2px solid #eaee06;
+    border-radius: 5px;
+  }
+}
+/* media queries de logros */
+@media screen and (min-width: 768px) {
+  .p-logros {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .boton-enviar {
+    background-color: #000000;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+    margin-left: 124px;
+    margin-bottom: 60px;
+    width: 70px;
+  }
+}
+@media screen and (max-width: 578px) {
+  .boton-enviar {
+    background-color: #000000;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+    margin-left: 13px;
+    margin-bottom: 60px;
+    width: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .img-png {
+    width: 0px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .img-png {
+    width: 0px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

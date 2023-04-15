@@ -224,6 +224,7 @@ p{
 
     position: relative;
 
+  }
 
     .img-campeones{
 
@@ -249,7 +250,7 @@ p{
        
     }
 
-    }
+    
 
 
 .h2-campeones{
@@ -345,9 +346,9 @@ p{
     font-weight: bold;
     position: relative;
     border-radius: 12px;
-    margin-left: 10px;
+    margin-left: 116px;
     margin-bottom: 60px;
-    width: 20%;
+    width: 70px;
 
    }
 
@@ -442,6 +443,8 @@ footer{
     }
 }
 
-@import "./queries";
+
 
 @import "../partials/bucles";
+
+@import "./queries";
