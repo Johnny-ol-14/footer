@@ -181,7 +181,6 @@
 
 @media screen and (max-width:578px) {
 
-    
     .text-campeones{
 
         position:absolute ;
@@ -194,6 +193,39 @@
         border-radius: 5px;
         padding: 5px;
        
+    }
+  
+}
+
+
+@media screen and (max-width:578px) {
+
+
+    
+.galeria {
+
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: repeat(5,1fr);
+    padding: 5px;
+    gap: 5px;
+
+    }
+    
+.imga{
+
+
+    border-radius: 5px;
+}
+
+
+}
+
+@media screen and (max-width:578px) {
+
+    .musica1{
+
+    
     }
     
 }
