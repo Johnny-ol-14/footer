@@ -509,6 +509,7 @@ footer .p-footer {
 }
 @media screen and (max-width: 578px) {
   .musica1 {
+    height: 200px;
     margin: 5px;
   }
 }
