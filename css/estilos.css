@@ -318,6 +318,12 @@ footer .p-footer {
   margin: 23px;
 }
 
+.h2-musica {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
 .titulo-1 {
   font-size: 1rem;
 }
@@ -499,6 +505,11 @@ footer .p-footer {
   }
   .imga {
     border-radius: 5px;
+  }
+}
+@media screen and (max-width: 578px) {
+  .musica1 {
+    margin: 5px;
   }
 }
 

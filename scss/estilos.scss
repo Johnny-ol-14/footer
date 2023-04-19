@@ -450,14 +450,19 @@ footer{
 margin-left:2px ;
 margin-right:2px;
 margin:23px;
-
-
-
 }
 
+.h2-musica{
+
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+
+}
 
 
 
 @import "../partials/bucles";
 
 @import "./queries";
+
