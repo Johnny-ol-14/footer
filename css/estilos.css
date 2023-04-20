@@ -32,7 +32,7 @@ body {
 }
 
 .h1-index {
-  color: #7111d0;
+  color: #dd00ff;
   font-size: 45px;
   font-family: "Faster One", cursive;
   margin-bottom: 30px;
@@ -66,7 +66,7 @@ p {
   justify-content: center;
 }
 .div-h1-logros .h1-logros {
-  color: #7111d0;
+  color: #dd00ff;
   margin-top: 5px;
   font-family: "Faster One", cursive;
   font-size: 45px;
@@ -95,7 +95,7 @@ p {
   justify-content: center;
 }
 .div-h1-galeria .h1-galeria {
-  color: #7111d0;
+  color: #dd00ff;
   font-size: 45px;
   font-family: "Faster One", cursive;
   margin-top: 5px;
@@ -136,7 +136,7 @@ p {
 
 /* campeones estilos grid */
 .h1-campeones {
-  color: #7111d0;
+  color: #dd00ff;
   font-size: 45px;
   font-family: "Faster One", cursive;
 }
@@ -174,7 +174,7 @@ p {
 }
 
 .h2-campeones {
-  color: #1154d0;
+  color: #5b7fff;
   margin: 10px;
   font-family: "Timmana", sans-serif;
 }
@@ -222,7 +222,7 @@ p {
 
 /* estilos contacto */
 .h1-contacto {
-  color: #7111d0;
+  color: #dd00ff;
   font-size: 45px;
   font-family: "Faster One", cursive;
 }
