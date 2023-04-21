@@ -88,6 +88,22 @@ p{
 }
 
 
+.nav-link{
+
+    
+    color: #000000
+    
+}
+
+.nav-link:hover{
+
+    color:#1154d0
+}
+
+.nav-link:visited{
+
+    color: #dd00ff
+}
 
 /* estilos de logros */
 
@@ -407,7 +423,7 @@ footer{
         align-items: center;
         padding: 2px;
         margin: 10px;
-        border: 2px solid black;
+        border: 2px solid rgb(0, 0, 0);
         border-radius: 50%;
         transition: all 0.2s ease-in;
         text-decoration: none;
@@ -417,7 +433,7 @@ footer{
 
     .iconos{
 
-        color: black;
+        color: rgb(0, 0, 0);
         font-size: 1.4rem;
         transition: all 0.2s ease-in;
     }

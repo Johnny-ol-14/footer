@@ -60,6 +60,18 @@ p {
   color: #f6f3f3;
 }
 
+.nav-link {
+  color: #000000;
+}
+
+.nav-link:hover {
+  color: #1154d0;
+}
+
+.nav-link:visited {
+  color: #dd00ff;
+}
+
 /* estilos de logros */
 .div-h1-logros {
   display: flex;
@@ -289,13 +301,13 @@ footer .a-footer {
   align-items: center;
   padding: 2px;
   margin: 10px;
-  border: 2px solid black;
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 50%;
   transition: all 0.2s ease-in;
   text-decoration: none;
 }
 footer .iconos {
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 1.4rem;
   transition: all 0.2s ease-in;
 }
@@ -487,8 +499,8 @@ footer .p-footer {
   .text-campeones {
     position: absolute;
     bottom: 0;
-    color: white;
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgb(0, 0, 0));
+    color: rgb(255, 255, 255);
+    background: linear-gradient(rgba(0, 0, 0, 0.509), rgb(0, 0, 0));
     width: 100%;
     margin: 0;
     font-size: 2.3vw;
