@@ -185,7 +185,7 @@
 
         position:absolute ;
         bottom:0 ;
-        color: white;
+        color: rgb(255, 255, 255);
         background: linear-gradient(rgba(255,255,255,0.5),rgba(0,0,0,1));
         width: 100%;
         margin: 0;
@@ -230,5 +230,11 @@
          margin: 5px;
         
      }
+    
+ }
+
+ @media screen and (max-width:578px) {
+
+
     
  }
