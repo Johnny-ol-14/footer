@@ -68,10 +68,6 @@ p {
   color: #1154d0;
 }
 
-.nav-link:visited {
-  color: #dd00ff;
-}
-
 /* estilos de logros */
 .div-h1-logros {
   display: flex;
@@ -335,6 +331,10 @@ footer .p-footer {
   display: flex;
   justify-content: center;
   margin: 10px;
+}
+
+p {
+  font-size: 20px;
 }
 
 .titulo-1 {

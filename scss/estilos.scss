@@ -90,20 +90,17 @@ p{
 
 .nav-link{
 
-    
     color: #000000
-    
-}
+        
+    }
 
 .nav-link:hover{
 
     color:#1154d0
 }
 
-.nav-link:visited{
 
-    color: #dd00ff
-}
+
 
 /* estilos de logros */
 
@@ -478,6 +475,10 @@ margin:23px;
 }
 
 
+p{
+
+    font-size: 20px;
+}
 
 @import "../partials/bucles";
 
