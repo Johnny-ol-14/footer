@@ -336,7 +336,11 @@ footer .p-footer {
 .h2-musica {
   display: flex;
   justify-content: center;
-  margin: 10px;
+}
+
+.h2m {
+  font-size: 40px;
+  margin-top: 15px;
 }
 
 p {
