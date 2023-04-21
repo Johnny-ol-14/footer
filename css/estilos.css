@@ -96,6 +96,12 @@ p {
   height: 260px;
   object-fit: cover;
 }
+.card-group .p-logros {
+  font-size: 15px;
+}
+.card-group .fecha {
+  color: #161515;
+}
 
 /* estilos de galeria */
 .div-h1-galeria {
